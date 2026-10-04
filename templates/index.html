@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<h1>Привет, мир!</h1>
+<p>Форма</p>
+<form action="/submit" method="post">
+  <label for="message">Сталин хорош?</label>
+  <textarea id="message" name="message" rows="2" cols="30"></textarea>
+  <br>
+  <button type="submit">Отправить</button>
+</form>
+</body>
+
+</html>
